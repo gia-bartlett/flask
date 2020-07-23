@@ -7,13 +7,13 @@ posts = [
         "author": "Georgina Bartlett",
         "title": "Learning Flask",
         "content": "Learning to create a website using Python!",
-        "date": "July 23rd"
+        "date_posted": "July 23rd"
     },
     {
         "author": "Hector Bartlett",
         "title": "Eating and Sleeping",
         "content": "I love peanut butter and I keep waking my mum up by having really loud dreams",
-        "date": "July 24th"
+        "date_posted": "July 24th"
     }
 ]
 
