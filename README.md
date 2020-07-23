@@ -39,3 +39,6 @@ route decorator - what we type into our browser to go to different pages
 if __name__ == "__main__":  # running the script with python directly
     app.run(debug=true)  # updates page without having to stop and reload
 ```
+Template Inheritance:  
+We use templates to prevent reusing code.  
+This means that if we need to update a section that is used for all the web pages we only need to do it in one place!
