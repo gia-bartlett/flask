@@ -34,3 +34,8 @@ app = Flask(__name__)
 # __name__ = special variable in python - the name of the module
 ```
 route decorator - what we type into our browser to go to different pages  
+
+```python
+if __name__ == "__main__":  # running the script with python directly
+    app.run(debug=true)  # updates page without having to stop and reload
+```
