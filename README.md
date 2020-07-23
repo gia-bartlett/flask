@@ -41,4 +41,14 @@ if __name__ == "__main__":  # running the script with python directly
 ```
 Template Inheritance:  
 We use templates to prevent reusing code.  
-This means that if we need to update a section that is used for all the web pages we only need to do it in one place!
+This means that if we need to update a section that is used for all the web pages we only need to do it in one place!  
+
+
+Secret Token:  
+console:  
+```python
+python
+import secrets
+secrets.token_hex(16)
+# prints out a random hex
+```
