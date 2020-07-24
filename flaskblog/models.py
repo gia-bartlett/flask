@@ -1,5 +1,5 @@
 from datetime import datetime
-from flaskblog import db
+from flaskblog import db, login_manager
 
 # models
 class User(db.Model):
