@@ -30,7 +30,7 @@ request
   
 ```python
 app = Flask(__name__)
-# app - instance of Flask class
+# flaskblog - instance of Flask class
 # __name__ = special variable in python - the name of the module
 ```
 route decorator - what we type into our browser to go to different pages  
