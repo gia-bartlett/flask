@@ -1,9 +1,15 @@
+# imports
 from flask import Flask, render_template, url_for, flash, redirect
+from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm, LoginForm
+from models import User, Post
 
+# configuration
 app = Flask(__name__)
-
 app.config["SECRET_KEY"] = '35b4aba7a69ce7830f6a23c80257a987'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'  # /// relative path from current file
+db = SQLAlchemy(app)  # creating an instance of our database
+
 
 posts = [
     {
@@ -43,7 +49,7 @@ def register():
 def login():
     form = LoginForm()  # create an instance of the form
     if form.validate_on_submit():
-        if form.email.data == 'admin@blog.com' and form.password.data == 'password':
+        if form.email.data == 'admin@blog.com' and form.password.data == 'password':  # hardcoding login details to test login function
             flash('You have been logged in!', 'success')
             return redirect(url_for('home'))
         else:
